@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Real Jackpots</a>
+        </div>
+    </div>
+</nav>
+
+<div *ngIf="data" class="container">
+  <div class="row">
+      <div class="col-sm-5">
+          <div class="panel panel-success">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Power Ball</h3>
+              </div>
+              <div class="panel-body">
+                  <h3><p>Real Jackpot:<b>{{data.powerCash *.604 | currency:'USD':true:'1.2-2'}} <small>Million</small></b></p></h3>
+                  <p>Advertised Jackpot:{{data.powerJackpot | currency:'USD':true:'1.2-2'}}</p>
+                  <p>Advertised LumpSum:{{data.powerCash | currency:'USD':true:'1.2-2'}}</p>
+                  
+                  todo: show the calculations
+                  
+
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-1">
+          <!-- empty space   -->
+      </div>
+      <div class="col-sm-5">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Mega Millions</h3>
+              </div>
+              <div class="panel-body">
+                  <h3><p>Real Jackpot:<b>{{data.megaCash *.604 | currency:'USD':true:'1.2-2'}} <small>Million</small></b></p></h3>
+                  <p>Advertised Jackpot:{{data.megaJackpot | currency:'USD':true:'1.2-2'}}</p>
+                  <p>Advertised LumpSum:{{data.megaCash | currency:'USD':true:'1.2-2'}}</p>
+                  
+                  todo: show the calculations
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
