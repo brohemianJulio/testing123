@@ -10,7 +10,7 @@ export class LottoService {
     constructor(private http: Http) {   }
 
     getData() {
-        let url = 'https://lotto-res.s3-website-us-west-2.amazonaws.com/lotto.json';
+        let url = 'http://lotto-res.s3-website-us-west-2.amazonaws.com/lotto.json';
 
         return this.http.get(url)
             .map(res => res.json())
