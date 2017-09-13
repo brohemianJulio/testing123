@@ -5,7 +5,7 @@
             </div>	
             <div class="col-sm-5">
                 
-                <div *ngIf="states" class="container">
+                <div *ngIf="states">
                     Choose your state: 
                     <select (change)="stateChanged($event.target.value)">
                         <option *ngFor="let x of states"> 
@@ -20,7 +20,7 @@
     </div>
     <br>
     
-    <div *ngIf="data" class="container">
+    <div *ngIf="data">
         <div class="row">
             <div class="col-sm-5">
                 <div class="panel panel-success">
